@@ -1,0 +1,19 @@
+<template name="useActivity">
+	<div class="use-activity">
+		<div>
+			<span class="name">{{name}}</span>
+		</div>
+		<div class="controls">
+			<div>
+				<button class="rotate"><i class="fa fa-refresh"></i> Rotate!</button>
+				<button class="edit"><i class="fa fa-edit"></i></button>
+			</div>
+			<div>
+				<span class="lastRotated">{{showLastRotated}}</span>
+			</div>
+		</div>
+		{{#each currentRotation}}
+			<div>{{.}}</div>
+		{{/each}}
+	</div>
+</template>

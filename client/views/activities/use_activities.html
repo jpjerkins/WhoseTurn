@@ -1,0 +1,14 @@
+<template name="useActivities">
+	<div class="row">
+		<div id="body" class="col-sm-6">
+			<h1 class="header">Activities</h1>
+			{{#if currentUser}}
+				<div id="activities">
+					{{#each activities}}
+						{{> useActivity}}
+					{{/each}}
+				</div>
+			{{/if}}
+		</div>
+	</div>
+</template>

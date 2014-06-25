@@ -1,0 +1,822 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"create",
+				"createAction"
+			],
+			[
+				"_",
+				"_contextId"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lib/routing.js",
+			"settings":
+			{
+				"buffer_size": 637,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/views/activities/use_activity.html",
+			"settings":
+			{
+				"buffer_size": 355,
+				"line_ending": "Unix",
+				"name": "<div class=\"use-activity\">"
+			}
+		},
+		{
+			"contents": "\nTemplate.useActivity.helpers({\n	showLastRotated: function() {\n		return moment(this.lastRotated).format(\"ddd, M/DD @ hA\");\n	},\n	currentRotation: function() {\n		var rotation = [];\n		for (i=0; i<this.tasks.length; i++) {\n			rotation.push(this.tasks[i] + \": \" + this.participants[i]);\n		}\n		return rotation;\n	}\n});\n\nTemplate.useActivity.events({\n	\"click .rotate\": function()\n})\n",
+			"file": "client/views/activities/use_activity.js",
+			"file_size": 312,
+			"file_write_time": 130481417268092038,
+			"settings":
+			{
+				"buffer_size": 375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/includes/styles.css",
+			"settings":
+			{
+				"buffer_size": 160,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/fixtures.js",
+			"settings":
+			{
+				"buffer_size": 439,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 117.0,
+		"selected_items":
+		[
+			[
+				"convtt",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"packrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"packins",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 482.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/phil/meteor/WhoseTurn/client/views/application/navigation.html",
+		"/home/phil/meteor/WhoseTurn/server/publications.js",
+		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/node_modules/fstream/node_modules/mkdirp/test/umask_sync.js",
+		"/home/phil/meteor/WhoseTurn/packages/bootstrap-3/update.sh",
+		"/home/phil/meteor/WhoseTurn/collections/activities.js",
+		"/home/phil/meteor/WhoseTurn/server/fixtures.js",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activities.html",
+		"/home/phil/meteor/WhoseTurn/client/includes/config.js",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activities.js",
+		"/home/phil/meteor/WhoseTurn/client/views/application/waiting.html",
+		"/home/phil/meteor/WhoseTurn/client/views/application/main.html",
+		"/home/phil/meteor/WhoseTurn/client/views/application/layout.html",
+		"/home/phil/meteor/ResponsivePIQ/.meteor/local/build/main.js",
+		"/home/phil/meteor/ResponsivePIQ/.meteor/local/build/programs/server/npm/minifiers/main/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/home/phil/meteor/ResponsivePIQ/client/views/includes/header.html",
+		"/home/phil/meteor/ResponsivePIQ/.meteor/local/build/programs/ctl/node_modules/esprima/LICENSE.BSD",
+		"/home/phil/meteor/ResponsivePIQ/packages/accounts-ui-bootstrap-3/login_buttons_images.css",
+		"/home/phil/meteor/ResponsivePIQ/packages/blaze-layout/layout.js",
+		"/home/phil/meteor/ResponsivePIQ/client/views/includes/access_denied.html",
+		"/home/phil/meteor/ResponsivePIQ/client/scorecards/scorecard_performance.html",
+		"/home/phil/meteor/ResponsivePIQ/client/stylesheets/styles.css",
+		"/home/phil/meteor/ResponsivePIQ/lib/router.js",
+		"/home/phil/meteor/ResponsivePIQ/client/views/application/navigation.html",
+		"/home/phil/meteor/ResponsivePIQ/client/scorecards/scorecard_performance.js",
+		"/home/phil/meteor/ResponsivePIQ/lib/helpers/responsive-tables.js",
+		"/home/phil/meteor/ResponsivePIQ/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/retry/lib/retry_operation.js",
+		"/home/phil/meteor/ResponsivePIQ/client/stylesheets/responsive-tables.css",
+		"/home/phil/meteor/ResponsivePIQ/client/views/application/layout.html",
+		"/home/phil/meteor/ResponsivePIQ/client/stylesheets/responsive-tables.js",
+		"/home/phil/meteor/ResponsivePIQ/ResponsivePIQ.sublime-project",
+		"/home/phil/meteor/ResponsivePIQ/packages/blaze-layout/LICENSE.txt",
+		"/home/phil/meteor/ResponsivePIQ/client/views/application/main.html",
+		"/home/phil/meteor/ResponsivePIQ/client/views/application/home.html",
+		"/home/phil/meteor/ResponsivePIQ/lib/helpers/config.js",
+		"/home/phil/meteor/ResponsivePIQ/.meteor/local/build/programs/ctl/node_modules/node-aes-gcm/src/node-aes-gcm.cc",
+		"/home/phil/meteor/ResponsivePIQ/.meteor/local/build/programs/ctl/node_modules/http-proxy/test/lib-http-proxy-common-test.js",
+		"/home/phil/meteor/ResponsivePIQ/client/helpers/config.js",
+		"/home/phil/meteor/ResponsivePIQ/.meteor/local/build/programs/ctl/node_modules/npm/scripts/clean-old.sh",
+		"/home/phil/meteor/ResponsivePIQ/ResponsivePIQ.html",
+		"/home/phil/meteor/lib/helpers/config.js",
+		"/home/phil/meteor/PhilGTD/client/views/application/PhilGTD.js",
+		"/home/phil/meteor/PhilGTD/collections/contexts.js",
+		"/home/phil/meteor/PhilGTD/common.js",
+		"/home/phil/meteor/PhilGTD/client/navigation.html",
+		"/home/phil/meteor/PhilGTD/client/views/contexts/context_actions.html",
+		"/home/phil/meteor/PhilGTD/server/publish.js",
+		"/home/phil/meteor/PhilGTD/lib/routing.js",
+		"/home/phil/meteor/PhilGTD/client/PhilGTD.js",
+		"/home/phil/meteor/PhilGTD/collections/next_actions.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/npm/doc/api/npm-edit.md",
+		"/home/phil/meteor/PhilGTD/collections/projects.js",
+		"/home/phil/meteor/PhilGTD/client/views/actions/actions.js",
+		"/home/phil/meteor/PhilGTD/client/views/contexts/manage_contexts.html",
+		"/home/phil/meteor/PhilGTD/client/views/contexts/contexts.js",
+		"/home/phil/meteor/PhilGTD/client/views/includes/loading.html",
+		"/home/phil/meteor/PhilGTD/client/PhilGTD.html",
+		"/home/phil/meteor/PhilGTD/client/views/application/layout.html",
+		"/home/phil/meteor/PhilGTD/client/views/contexts/contexts.html",
+		"/home/phil/meteor/PhilGTD/client/views/contexts/contexts.css",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/main.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/server/npm/minifiers/main/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/npm/logging/main/node_modules/cli-color/node_modules/memoizee/node_modules/event-emitter/benchmark/many-on.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/node-aes-gcm/src/node-aes-gcm.cc",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/node-aes-gcm/build/Release/node_aes_gcm.node",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/npm/mongo-livedata/main/node_modules/mongodb/lib/mongodb/commands/get_more_command.js",
+		"/home/phil/meteor/PhilGTD/packages/iron-router/CONTRIBUTING.md",
+		"/home/phil/meteor/PhilGTD/smart.json",
+		"/home/phil/meteor/PhilGTD/client/views/actions/show_action.html",
+		"/home/phil/meteor/PhilGTD/client/views/actions/actions.css",
+		"/home/phil/meteor/PhilGTD/packages/accounts-ui-bootstrap-3/accounts_ui_tests.js",
+		"/home/phil/meteor/PhilGTD/client/accounts.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/client/app/client/contexts.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/client/app/client/views/actions/context_actions.js",
+		"/home/phil/meteor/PhilGTD/client/contexts.js",
+		"/home/phil/meteor/PhilGTD/client/actions.css",
+		"/home/phil/meteor/PhilGTD/lib/helpers.js",
+		"/home/phil/meteor/PhilGTD/client/views/actions/show_action.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/retry/lib/retry_operation.js",
+		"/home/phil/meteor/PhilGTD/.meteor/release",
+		"/home/phil/meteor/PhilGTD/client/views/actions/next_actions.html",
+		"/home/phil/meteor/PhilGTD/client/views/actions/context_actions.html",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/tar/lib/extract.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/tar/examples/extracter.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/http-proxy/test/examples-test.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/npm/logging/main/node_modules/cli-color/node_modules/memoizee/node_modules/next-tick/lib/next-tick.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/npm/doc/api/npm-explore.md",
+		"/home/phil/meteor/PhilGTD/client/actions.html",
+		"/home/phil/meteor/PhilGTD/client/views/actions/actions.html",
+		"/home/phil/meteor/PhilGTD/client/actions.js",
+		"/home/phil/meteor/PhilGTD/client/views/actions/context_actions.js",
+		"/home/phil/meteor/PhilGTD/client/views/actions/action_item.js",
+		"/home/phil/meteor/PhilGTD/client/views/actions/action_item.html",
+		"/home/phil/meteor/PhilGTD/client/routing.js",
+		"/home/phil/.config/sublime-text-3/Packages/GoSublime/USAGE.md",
+		"/home/phil/meteor/PhilGTD/client/navigation.js",
+		"/home/phil/meteor/PhilGTD/client/PhilGTD.css",
+		"/home/phil/meteor/PhilGTD/PhilGTD.sublime-project",
+		"/home/phil/meteor/PhilGTD/server/accounts.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/server/npm/mongo-livedata/main/node_modules/mongodb/lib/mongodb/connection/server_capabilities.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/server/node_modules/request/node_modules/hawk/lib/server.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/client/packages/service-configuration.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/client/packages/session.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/server/node_modules/request/node_modules/hawk/lib/client.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/server/node_modules/npm/cli.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/server/node_modules/esprima/ChangeLog",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/source-map/build/prefix-utils.jsm",
+		"/home/phil/meteor/PhilGTD/client/contexts.html",
+		"/home/phil/meteor/PhilGTD/client/contexts.css",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/npm/mongo-livedata/main/node_modules/mongodb/lib/mongodb/connection/server_capabilities.js",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/server/packages/accounts-base.js",
+		"/home/phil/meteor/PhilGTD/client/home.html",
+		"/home/phil/.config/sublime-text-3/Packages/GoSublime/CHANGELOG.md",
+		"/home/phil/meteor/PhilGTD/client/header.html",
+		"/home/phil/meteor/PhilGTD/client/metaTags.html",
+		"/home/phil/meteor/PhilGTD/client/meta-tags.html",
+		"/home/phil/meteor/PhilGTD/client/navigation",
+		"/home/phil/meteor/PhilGTD/server/bootstrap.js",
+		"/home/phil/meteor/PhilGTD/.gitignore",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/config.json",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/ansi/color-spaces.pl",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/source-map-support/source-map-support.js",
+		"/home/phil/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/phil/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/client/packages/application-configuration.js",
+		"/home/phil/meteor/PhilGTD/PhilGTD.css",
+		"/home/phil/meteor/PhilGTD/PhilGTD.js",
+		"/home/phil/meteor/PhilGTD/PhilGTD.html",
+		"/etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"strings",
+			"userId, action",
+			"action.owner",
+			"Posts.",
+			"/posts/",
+			"posts",
+			"<tr>",
+			"cell 7",
+			"cell 1",
+			"function",
+			"pathFor",
+			"=function",
+			"}}",
+			";",
+			"{",
+			"switched",
+			";",
+			"{",
+			"}",
+			";",
+			"}",
+			"{",
+			"}",
+			"{",
+			";",
+			"<tr>",
+			"nextActions",
+			"nextAction",
+			"ul",
+			"text",
+			"label",
+			"span",
+			"contexts:",
+			"context:",
+			" = new",
+			"context",
+			"{owner:this.userId}",
+			".user()._id",
+			"user()._id",
+			".user().username",
+			".username",
+			":",
+			"quickContext",
+			"Value",
+			"next-action",
+			"context",
+			" ",
+			": ",
+			", ",
+			"'});",
+			"template:",
+			"this.route(",
+			"template:",
+			"{path:",
+			"template:",
+			"{path",
+			"{path:",
+			", {",
+			", template",
+			"//////////",
+			"delete",
+			".destroy",
+			".todo",
+			"#item-list",
+			"alias",
+			"-l",
+			"--color"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lib/routing.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								637,
+								637
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/views/activities/use_activity.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								162
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<div class=\"use-activity\">",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/views/activities/use_activity.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								370
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/includes/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "server/fixtures.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-output":
+	{
+		"height": 88.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 88.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "WhoseTurn.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"fix",
+				"server/fixtures.js"
+			],
+			[
+				"main.html",
+				"client/views/application/main.html"
+			],
+			[
+				"main",
+				".meteor/local/build/main.js"
+			],
+			[
+				"nav",
+				"client/views/application/navigation.html"
+			],
+			[
+				"home",
+				"client/views/application/home.html"
+			],
+			[
+				"libconf",
+				"lib/helpers/config.js"
+			],
+			[
+				"conf",
+				"client/helpers/config.js"
+			],
+			[
+				"rout",
+				"lib/router.js"
+			],
+			[
+				"navig",
+				"client/views/application/navigation.html"
+			],
+			[
+				"respon",
+				"lib/helpers/responsive-tables.js"
+			],
+			[
+				"responsivetables.js",
+				"client/stylesheets/responsive-tables.js"
+			],
+			[
+				"responsivetablescss",
+				"client/stylesheets/responsive-tables.css"
+			],
+			[
+				"layouthtml",
+				"client/views/application/layout.html"
+			],
+			[
+				"layou",
+				"packages/blaze-layout/layout.js"
+			],
+			[
+				"hea",
+				"client/views/includes/header.html"
+			],
+			[
+				"he",
+				"client/views/includes/header.html"
+			],
+			[
+				"contextactionsh",
+				"client/views/contexts/context_actions.html"
+			],
+			[
+				"navjs",
+				"client/navigation.js"
+			],
+			[
+				"contexts",
+				"collections/contexts.js"
+			],
+			[
+				"nextactions",
+				"collections/next_actions.js"
+			],
+			[
+				"publi",
+				"server/publish.js"
+			],
+			[
+				"contextshtml",
+				"client/views/contexts/contexts.html"
+			],
+			[
+				"contextactions",
+				"client/views/contexts/context_actions.html"
+			],
+			[
+				"smartjs",
+				"smart.json"
+			],
+			[
+				"philgtdhtml",
+				"client/PhilGTD.html"
+			],
+			[
+				"actionsjs",
+				"client/views/actions/actions.js"
+			],
+			[
+				"showactionjs",
+				"client/views/actions/show_action.js"
+			],
+			[
+				"showactionhtml",
+				"client/views/actions/show_action.html"
+			],
+			[
+				"showac",
+				"client/views/actions/show_action.html"
+			],
+			[
+				"actionshtml",
+				"client/views/actions/actions.html"
+			],
+			[
+				"pub",
+				"server/publish.js"
+			],
+			[
+				"actions.j",
+				"client/actions.js"
+			],
+			[
+				"actions.h",
+				"client/actions.html"
+			],
+			[
+				"actions.css",
+				"client/actions.css"
+			],
+			[
+				"phil.css",
+				"client/PhilGTD.css"
+			],
+			[
+				"serveraccoun",
+				"server/accounts.js"
+			],
+			[
+				"clientaccou",
+				"client/accounts.js"
+			],
+			[
+				"accou",
+				"client/accounts.js"
+			],
+			[
+				"philg.j",
+				"client/PhilGTD.js"
+			],
+			[
+				"comm",
+				"common.js"
+			],
+			[
+				"philg.js",
+				"client/PhilGTD.js"
+			],
+			[
+				"nav.js",
+				"client/navigation.js"
+			],
+			[
+				"contexts.j",
+				"client/contexts.js"
+			],
+			[
+				"navhtml",
+				"client/navigation.html"
+			],
+			[
+				"actionsht",
+				"client/actions.html"
+			],
+			[
+				"servaccou",
+				"server/accounts.js"
+			],
+			[
+				"philgtd.html",
+				"client/PhilGTD.html"
+			],
+			[
+				"philhtml",
+				"client/PhilGTD.html"
+			],
+			[
+				"pgtdcss",
+				"client/PhilGTD.css"
+			],
+			[
+				"ac",
+				"client/actions.html"
+			],
+			[
+				"action",
+				"client/actions.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"mic",
+				"~/meteor/microscope/microscope.sublime-project"
+			],
+			[
+				"gtd",
+				"~/meteor/PhilGTD/PhilGTD.sublime-project"
+			],
+			[
+				"pgtd",
+				"~/meteor/PhilGTD/PhilGTD.sublime-project"
+			],
+			[
+				"",
+				"~/meteor/todos-demo/todos-demo.sublime-project"
+			],
+			[
+				"todo",
+				"~/meteor/todos-demo/todos-demo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,18 @@
+
+.use-activity {
+	padding-bottom: 0.5em;
+}
+
+.use-activity .name {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.use-activity .lastRotated {
+	font-style: italic;
+}
+
+.use-activity .controls {
+	float: right;
+	text-align: right;
+}
