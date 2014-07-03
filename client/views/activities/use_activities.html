@@ -1,6 +1,6 @@
 <template name="useActivities">
 	<div class="row">
-		<div id="body" class="col-sm-6">
+		<div id="body" class="col-sm-12 col-lg-6">
 			<h1 class="header">Activities</h1>
 			{{#if currentUser}}
 				<div id="activities">
@@ -9,6 +9,8 @@
 					{{/each}}
 				</div>
 			{{/if}}
+
+			{{> newActivity}}
 		</div>
 	</div>
 </template>

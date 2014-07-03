@@ -20,6 +20,6 @@ Template.useActivity.events({
 	},
 	'click .edit': function(e) {
 		e.preventDefault();
-		if (console) console.log('Just clicked edit button');
-	}
+		Router.go('editActivity', {_id: this._id});
+	},
 });

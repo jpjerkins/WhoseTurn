@@ -19,43 +19,26 @@
 			"file": "lib/routing.js",
 			"settings":
 			{
-				"buffer_size": 637,
+				"buffer_size": 764,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/views/activities/use_activity.html",
+			"file": "client/views/activities/edit_activity.html",
 			"settings":
 			{
-				"buffer_size": 355,
-				"line_ending": "Unix",
-				"name": "<div class=\"use-activity\">"
-			}
-		},
-		{
-			"contents": "\nTemplate.useActivity.helpers({\n	showLastRotated: function() {\n		return moment(this.lastRotated).format(\"ddd, M/DD @ hA\");\n	},\n	currentRotation: function() {\n		var rotation = [];\n		for (i=0; i<this.tasks.length; i++) {\n			rotation.push(this.tasks[i] + \": \" + this.participants[i]);\n		}\n		return rotation;\n	}\n});\n\nTemplate.useActivity.events({\n	\"click .rotate\": function()\n})\n",
-			"file": "client/views/activities/use_activity.js",
-			"file_size": 312,
-			"file_write_time": 130481417268092038,
-			"settings":
-			{
-				"buffer_size": 375,
+				"buffer_size": 1004,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/includes/styles.css",
+			"contents": "// CodePen experiment: http://codepen.io/anon/pen/lvDCe?editors=101\nTemplate.editActivity.events({\n	'submit form': function(e) {\n		e.preventDefault();\n\n		Activities.update({_id:this.id},{$set:{\n			name: $(e.target).find('[name=name]').val(),\n			tasks:this.tasks,\n			participants:this.participants\n		}});\n		if (error) {\n			// display the error to the user\n			throwError(error.reason);\n			if (error.error === 302)\n				Router.go('postPage', {_id: error.details});\n		} else {\n			Router.go('postPage', {_id: id});\n		}\n	},\n	'click #addParticipant': function(e) {\n		this.participants.push($(e.target))\n	}\n});\n",
+			"file": "client/views/activities/edit_activity.js",
+			"file_size": 520,
+			"file_write_time": 130488252187847164,
 			"settings":
 			{
-				"buffer_size": 160,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/fixtures.js",
-			"settings":
-			{
-				"buffer_size": 439,
+				"buffer_size": 602,
 				"line_ending": "Unix"
 			}
 		}
@@ -128,13 +111,22 @@
 	},
 	"file_history":
 	[
-		"/home/phil/meteor/WhoseTurn/client/views/application/navigation.html",
-		"/home/phil/meteor/WhoseTurn/server/publications.js",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/new_activity.html",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/new_activity.js",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activity.html",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activities.html",
+		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/init-package-json/example/example-default.js",
+		"/home/phil/meteor/WhoseTurn/packages/moment/export-moment.js",
 		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/node_modules/fstream/node_modules/mkdirp/test/umask_sync.js",
 		"/home/phil/meteor/WhoseTurn/packages/bootstrap-3/update.sh",
-		"/home/phil/meteor/WhoseTurn/collections/activities.js",
 		"/home/phil/meteor/WhoseTurn/server/fixtures.js",
-		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activities.html",
+		"/home/phil/meteor/WhoseTurn/client/includes/styles.css",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activity.js",
+		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/node_modules/npm/doc/api/npm-edit.md",
+		"/home/phil/meteor/WhoseTurn/client/views/application/navigation.html",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/post_activity.js",
+		"/home/phil/meteor/WhoseTurn/server/publications.js",
+		"/home/phil/meteor/WhoseTurn/collections/activities.js",
 		"/home/phil/meteor/WhoseTurn/client/includes/config.js",
 		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activities.js",
 		"/home/phil/meteor/WhoseTurn/client/views/application/waiting.html",
@@ -246,16 +238,7 @@
 		"/home/phil/meteor/PhilGTD/client/navigation",
 		"/home/phil/meteor/PhilGTD/server/bootstrap.js",
 		"/home/phil/meteor/PhilGTD/.gitignore",
-		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/config.json",
-		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/ansi/color-spaces.pl",
-		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/source-map-support/source-map-support.js",
-		"/home/phil/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/home/phil/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
-		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/client/packages/application-configuration.js",
-		"/home/phil/meteor/PhilGTD/PhilGTD.css",
-		"/home/phil/meteor/PhilGTD/PhilGTD.js",
-		"/home/phil/meteor/PhilGTD/PhilGTD.html",
-		"/etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla"
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/config.json"
 	],
 	"find":
 	{
@@ -273,6 +256,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"{{.",
+			"input",
+			"textarea",
+			"task",
+			"title",
+			"url",
+			"participants.",
 			"strings",
 			"userId, action",
 			"action.owner",
@@ -366,133 +356,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 637,
+						"buffer_size": 764,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								637,
-								637
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client/views/activities/use_activity.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								162,
-								162
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<div class=\"use-activity\">",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "client/views/activities/use_activity.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 375,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								370,
-								370
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "client/includes/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 160,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								39,
-								39
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "server/fixtures.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								488,
+								488
 							]
 						],
 						"settings":
@@ -505,6 +377,65 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/views/activities/edit_activity.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/views/activities/edit_activity.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								594,
+								594
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -564,6 +495,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"useactivity",
+				"client/views/activities/use_activity.html"
+			],
+			[
+				"editac",
+				"client/views/activities/edit_activity.html"
+			],
+			[
+				"useac",
+				"client/views/activities/use_activities.html"
+			],
 			[
 				"fix",
 				"server/fixtures.js"
@@ -777,12 +720,12 @@
 		"selected_items":
 		[
 			[
-				"mic",
-				"~/meteor/microscope/microscope.sublime-project"
-			],
-			[
 				"gtd",
 				"~/meteor/PhilGTD/PhilGTD.sublime-project"
+			],
+			[
+				"mic",
+				"~/meteor/microscope/microscope.sublime-project"
 			],
 			[
 				"pgtd",
