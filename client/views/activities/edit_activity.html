@@ -1,5 +1,7 @@
 <template name="editActivity">
 	<form class="main">
+		<h2>Info</h2>
+
 		<div class="control-group">
 			<label class="control-label" for="url">Name</label>
 			<div class="controls">
@@ -10,29 +12,31 @@
 		<div class="control-group">
 			<div class="controls">
 				<input type="submit" value="Submit" class="btn btn-primary"/>
+				<button id="deleteActivity" class="btn btn-danger">Delete Activity</button>
 			</div>
 		</div>
-
-		<div class="control-group">
-			<label class="control-label" for="message">Tasks</label>
-			{{#each tasks}}
-				<div class="task">{{.}}</div>
-			{{/each}}
-			<div class="controls">
-				<input id="newTask" placeholder="New task" />
-				<button id="addTask">Add</button>
-			</div>
-		</div> 
-
-		<div class="control-group">
-			<label class="control-label" for="message">Participants</label>
-			{{#each participants}}
-				<div class="participant">{{.}}</div>
-			{{/each}}
-			<div class="controls">
-				<input id="newParticipant" placeholder="Participant's name" />
-				<button id="addParticipant">Add</button>
-			</div>
-		</div> 
+	
 	</form>
+
+	<div class="control-group">
+		<h2>Tasks</h2>
+		{{#each augmentedTasks}}
+			{{>editTask}}
+		{{/each}}
+		<div class="controls">
+			<input id="newTask" placeholder="New task" />
+			<button class="btn btn-success" id="addTask">Add</button>
+		</div>
+	</div> 
+
+	<div class="control-group">
+		<h2>Participants</h2>
+		{{#each augmentedParticipants}}
+			{{>editParticipant}}
+		{{/each}}
+		<div class="controls">
+			<input id="newParticipant" placeholder="Participant's name" />
+			<button class="btn btn-success" id="addParticipant">Add</button>
+		</div>
+	</div> 
 </template>

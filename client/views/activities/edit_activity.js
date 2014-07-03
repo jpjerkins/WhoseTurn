@@ -1,4 +1,25 @@
 // CodePen experiment: http://codepen.io/anon/pen/lvDCe?editors=101
+Template.editActivity.helpers({
+	augmentedTasks : function() {
+		var self = this;
+		return _.map(self.tasks, function(t) {
+			return {
+				parent: self,
+				name: t
+			}
+		})
+	},
+	augmentedParticipants : function() {
+		var self = this;
+		return _.map(self.participants, function(p) {
+			return {
+				parent: self,
+				name: p
+			};
+		})
+	}
+});
+
 Template.editActivity.events({
 	'submit form': function(e) {
 		e.preventDefault();
@@ -9,6 +30,20 @@ Template.editActivity.events({
 				name: $(e.target).find('[name=name]').val()
 			}},
 			function(err, id) {
+				if (err) alert(err);
+				else Router.go('useActivities');
+			}
+		);
+	},
+	'click #deleteActivity': function(e) {
+		e.preventDefault();
+		
+		if (!confirm('Are you sure you want to delete the ' + this.name + ' activity?'))
+			return;
+
+		Activities.remove(
+			{_id:this._id},
+			function(err) {
 				if (err) alert(err);
 				else Router.go('useActivities');
 			}

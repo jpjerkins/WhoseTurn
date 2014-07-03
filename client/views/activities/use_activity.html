@@ -5,11 +5,12 @@
 		</div>
 		<div class="controls">
 			<div>
-				<button class="rotate"><i class="fa fa-refresh"></i> Rotate!</button>
-				<button class="edit"><i class="fa fa-edit"></i></button>
+				<button class="rotate btn btn-success"><i class="fa fa-refresh"></i> Rotate!</button>
+				<button class="edit btn btn-default"><i class="fa fa-edit"></i></button>
 			</div>
 			<div>
-				<span class="lastRotated">{{showLastRotated}}</span>
+				<div class="lastRotated">{{showLastRotatedDate}}</div>
+				<div class="lastRotated">{{showLastRotatedTime}}</div>
 			</div>
 		</div>
 		{{#each currentRotation}}

@@ -6,7 +6,8 @@ Template.newActivity.events({
 		var newActivity = {
 			name: $(evt.target).find('[name=name]').val(),
 			tasks: [],
-			participants: []
+			participants: [],
+			lastRotated: new Date().getTime()
 		};
 
 		Activities.insert(newActivity, function(err, id) {

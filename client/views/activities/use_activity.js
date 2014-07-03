@@ -1,7 +1,13 @@
 
 Template.useActivity.helpers({
 	showLastRotated: function() {
-		return moment(this.lastRotated).format("ddd, M/DD @ hA");
+		return moment(this.lastRotated).format("ddd, M/DD @ h:mm A");
+	},
+	showLastRotatedDate: function() {
+		return moment(this.lastRotated).format("ddd, M/DD");
+	},
+	showLastRotatedTime: function() {
+		return moment(this.lastRotated).format("h:mm A");
 	},
 	currentRotation: function() {
 		var rotation = [];
@@ -15,8 +21,7 @@ Template.useActivity.helpers({
 Template.useActivity.events({
 	'click .rotate': function(e) {
 		e.preventDefault();
-		this.participants.push(this.participants.shift());
-		Activities.update({_id:this._id},{$set:{participants:this.participants}});
+		rotateActivity(this);
 	},
 	'click .edit': function(e) {
 		e.preventDefault();

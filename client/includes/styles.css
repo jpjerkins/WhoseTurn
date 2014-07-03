@@ -16,3 +16,19 @@
 	float: right;
 	text-align: right;
 }
+
+.editTask {
+	font-size: 1.5em;
+}
+
+.deleteTask {
+	padding-right: 0.25em;
+}
+
+.editParticipant {
+	font-size: 1.5em;
+}
+
+.deleteParticipant {
+	padding-right: 0.25em;
+}
