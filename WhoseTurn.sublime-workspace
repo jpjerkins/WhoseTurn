@@ -27,7 +27,7 @@
 			"file": "server/fixtures.js",
 			"settings":
 			{
-				"buffer_size": 439,
+				"buffer_size": 592,
 				"line_ending": "Unix"
 			}
 		},
@@ -269,6 +269,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tomId",
 			"<button",
 			"participants",
 			"Participant",
@@ -410,15 +411,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 439,
+						"buffer_size": 592,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								89,
-								89
+								208,
+								208
 							]
 						],
 						"settings":
