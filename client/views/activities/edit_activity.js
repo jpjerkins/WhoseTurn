@@ -58,7 +58,10 @@ Template.editActivity.events({
 			{$push:{tasks:newTask.val()}},
 			function(err, id) {
 				if (err) alert(err);
-				else newTask.val('');
+				else {
+					newTask.val('');
+					newTask.focus();
+				}
 			}
 		);
 	},
@@ -71,7 +74,10 @@ Template.editActivity.events({
 			{$push:{participants:newParticipant.val()}},
 			function(err, id) {
 				if (err) alert(err);
-				else newParticipant.val('');
+				else {
+					newParticipant.val('');
+					newParticipant.focus();
+				}
 			}
 		);
 	}
