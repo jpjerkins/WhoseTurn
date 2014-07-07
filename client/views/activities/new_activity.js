@@ -7,6 +7,7 @@ Template.newActivity.events({
 			name: $(evt.target).find('[name=name]').val(),
 			tasks: [],
 			participants: [],
+			owner: Meteor.user()._id,
 			lastRotated: new Date().getTime()
 		};
 

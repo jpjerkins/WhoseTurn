@@ -11,8 +11,9 @@ Template.useActivity.helpers({
 	},
 	currentRotation: function() {
 		var rotation = [];
+		var numParticipants = this.participants.length;
 		for (i=0; i<this.tasks.length; i++) {
-			rotation.push(this.tasks[i] + ": " + this.participants[i]);
+			rotation.push(this.tasks[i] + ": " + this.participants[i % numParticipants]);
 		}
 		return rotation;
 	}
