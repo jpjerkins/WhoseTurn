@@ -1,16 +1,29 @@
 <template name="useActivities">
 	<div class="row">
 		<div id="body" class="col-sm-12 col-lg-6">
-			<h1 class="header">Activities</h1>
 			{{#if currentUser}}
+				<h1 class="header">Activities</h1>
 				<div id="activities">
 					{{#each activities}}
 						{{> useActivity}}
 					{{/each}}
 				</div>
-			{{/if}}
 
-			{{> newActivity}}
+				{{> newActivity}}
+			{{else}}
+				<h1>Welcome to WhoseTurn!</h1>
+				<p>
+					WhoseTurn is an app intended to help parents answer that <b>most important</b> question:  <i>"Whose turn is it?!?"</i>  More than
+					simply remembering the answer for you, it will let both
+					see the same answer <i>at all times</i> - if your spouse rotates one
+					of the activities, you'll see the change immediately.
+				</p>
+				<p>
+					If you've never used WhoseTurn before, please create an account
+					<b>for your family</b>.  Everyone in your family that will be
+					using WhoseTurn should <b>use the same account</b>.
+				</p>
+			{{/if}}
 		</div>
 	</div>
 </template>
