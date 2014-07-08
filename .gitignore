@@ -1,2 +1,5 @@
 # Artifacts of Meteor, Meteorite, and Sublime Text
 PhilGTD.sublime*
+dump
+backup.sh
+mongoServer.sh

@@ -16,29 +16,10 @@
 	"buffers":
 	[
 		{
-			"file": "lib/routing.js",
+			"file": "client/views/activities/edit_activity.js",
 			"settings":
 			{
-				"buffer_size": 760,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\nTemplate.newActivity.events({\n	'submit form' : function(evt) {\n		evt.preventDefault();\n\n		var newActivity = {\n			name: $(evt.target).find('[name=name]').val(),\n			tasks: [],\n			participants: [],\n			owner: \n			lastRotated: new Date().getTime()\n		};\n\n		Activities.insert(newActivity, function(err, id) {\n			if (err) {\n				alert(err);\n			} else {\n				Router.go('editActivity', {_id: id});\n			}\n		});\n	}\n})",
-			"file": "client/views/activities/new_activity.js",
-			"file_size": 392,
-			"file_write_time": 130488288967229543,
-			"settings":
-			{
-				"buffer_size": 403,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "collections/activities.js",
-			"settings":
-			{
-				"buffer_size": 177,
+				"buffer_size": 1617,
 				"line_ending": "Unix"
 			}
 		}
@@ -111,11 +92,18 @@
 	},
 	"file_history":
 	[
-		"/home/phil/meteor/WhoseTurn/server/fixtures.js",
+		"/home/phil/meteor/WhoseTurn/collections/activities.js",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activity.js",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/new_activity.js",
+		"/home/phil/meteor/WhoseTurn/lib/routing.js",
+		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activities.html",
 		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activity.html",
+		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/node_modules/npm/node_modules/retry/lib/retry_operation.js",
+		"/home/phil/meteor/WhoseTurn/README.md",
+		"/home/phil/meteor/WhoseTurn/lib/activities_common.js",
+		"/home/phil/meteor/WhoseTurn/server/fixtures.js",
 		"/home/phil/meteor/WhoseTurn/lib/permissions.js",
 		"/home/phil/meteor/WhoseTurn/server/publications.js",
-		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activity.js",
 		"/home/phil/meteor/WhoseTurn/client/views/activities/edit_task.html",
 		"/home/phil/meteor/WhoseTurn/client/views/activities/edit_task.js",
 		"/home/phil/meteor/WhoseTurn/client/views/activities/edit_activity.html",
@@ -139,8 +127,6 @@
 		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/node_modules/source-map-support/source-map-support.js",
 		"/home/phil/meteor/WhoseTurn/packages/moment/lib/moment/tasks/check_sauce_creds.js",
 		"/home/phil/meteor/WhoseTurn/client/includes/config.js",
-		"/home/phil/meteor/WhoseTurn/lib/activities_common.js",
-		"/home/phil/meteor/WhoseTurn/collections/activities.js",
 		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/npm/mongo-livedata/main/node_modules/mongodb/lib/mongodb/command_cursor.js",
 		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/node_modules/npm/doc/api/npm-commands.md",
 		"/home/phil/meteor/WhoseTurn/packages/moment/lib/moment/component.json",
@@ -149,9 +135,7 @@
 		"/home/phil/meteor/WhoseTurn/packages/moment/lib/moment/lang/he.js",
 		"/home/phil/meteor/WhoseTurn/packages/blaze-layout/History.md",
 		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activities.js",
-		"/home/phil/meteor/WhoseTurn/client/views/activities/use_activities.html",
 		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/client/app/client/views/activities/use_activities.js",
-		"/home/phil/meteor/WhoseTurn/client/views/activities/new_activity.js",
 		"/home/phil/meteor/WhoseTurn/packages/iron-router/.build/npm/node_modules/connect/lib/public/error.html",
 		"/home/phil/meteor/WhoseTurn/.meteor/local/build/programs/ctl/node_modules/tar/lib/entry-writer.js",
 		"/home/phil/meteor/WhoseTurn/client/views/application/navigation.html",
@@ -235,10 +219,7 @@
 		"/home/phil/meteor/PhilGTD/client/views/actions/context_actions.html",
 		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/tar/lib/extract.js",
 		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/tar/examples/extracter.js",
-		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/http-proxy/test/examples-test.js",
-		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/npm/logging/main/node_modules/cli-color/node_modules/memoizee/node_modules/next-tick/lib/next-tick.js",
-		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/npm/doc/api/npm-explore.md",
-		"/home/phil/meteor/PhilGTD/client/actions.html"
+		"/home/phil/meteor/PhilGTD/.meteor/local/build/programs/ctl/node_modules/http-proxy/test/examples-test.js"
 	],
 	"find":
 	{
@@ -361,24 +342,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "lib/routing.js",
+					"file": "client/views/activities/edit_activity.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 760,
+						"buffer_size": 1617,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								87,
-								141
+								1593,
+								1593
 							]
 						],
 						"settings":
@@ -387,67 +368,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client/views/activities/new_activity.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								206,
-								206
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 578.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "collections/activities.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 177,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								169,
-								169
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -508,6 +432,22 @@
 		"selected_items":
 		[
 			[
+				"editac",
+				"client/views/activities/edit_activity.js"
+			],
+			[
+				"useactivitiesh",
+				"client/views/activities/use_activities.html"
+			],
+			[
+				"rout",
+				"lib/routing.js"
+			],
+			[
+				"useact",
+				"client/views/activities/use_activity.js"
+			],
+			[
 				"new",
 				"client/views/activities/new_activity.js"
 			],
@@ -522,10 +462,6 @@
 			[
 				"edittaskhtml",
 				"client/views/activities/edit_task.html"
-			],
-			[
-				"editac",
-				"client/views/activities/edit_activity.js"
 			],
 			[
 				"use",
@@ -578,10 +514,6 @@
 			[
 				"conf",
 				"client/helpers/config.js"
-			],
-			[
-				"rout",
-				"lib/router.js"
 			],
 			[
 				"navig",
